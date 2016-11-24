@@ -31,17 +31,17 @@ public class Product implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @Column(name = "productID")
+    @Column(name = "pID")
     private String productID;
     
-    @Column(name = "productName")
+    @Column(name = "pName")
     private String productName;
     
     @Column(name = "createdDate")
     @Temporal(TemporalType.TIMESTAMP)
     private Date createdDate;
     
-    @JoinColumn(name = "manufacturerID", referencedColumnName = "manufacturerID")
+    @JoinColumn(name = "manuID", referencedColumnName = "manuID")
     @ManyToOne
     private Manufacturer manufacturer;
 

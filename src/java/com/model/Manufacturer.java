@@ -30,10 +30,10 @@ public class Manufacturer implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @Column(name = "manufacturerID")
+    @Column(name = "manuID")
     private String manufacturerID;
     
-    @Column(name = "manufacturerName")
+    @Column(name = "manuName")
     private String manufacturerName;
     
     @OneToMany(mappedBy = "manufacturer")
